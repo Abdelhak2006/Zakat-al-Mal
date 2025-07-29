@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>حاسبة زكاة المال</title>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h1>حاسبة زكاة المال</h1>
+    <p>أدخل المبلغ الذي تملكه واحسب زكاتك بسهولة</p>
+
+    <form id="zakatForm">
+      <label for="amount">المبلغ الكلي (جنيه أو ريال):</label>
+      <input type="number" id="amount" placeholder="مثلاً: 100000" required />
+
+      <label for="type">نوع المال:</label>
+      <select id="type">
+        <option value="money">مال نقدي</option>
+        <option value="gold">ذهب</option>
+        <option value="silver">فضة</option>
+      </select>
+
+      <button type="submit">احسب الزكاة</button>
+    </form>
+
+    <div id="result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
